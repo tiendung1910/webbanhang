@@ -17,9 +17,9 @@ header {
     justify-content: space-around; 
     align-items: center;
     z-index: 999;
-    font-size: 40px;
-    font-family: 'Cookie', cursive;
-    font-family: 'Lobster Two', cursive;
+    font-size: 18px;
+    /* font-family: 'Cookie', cursive;
+    font-family: 'Lobster Two', cursive; */
   }
   header .header .logo {
     width: 150px;
@@ -71,189 +71,11 @@ header {
     .SignIn-LogIn {
         display: none;
     }
+    header {
+      display: none;
   }
+}
   
-  /* navbar */
-  nav{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
-  }
-  nav .navbar {
-    
-    width: 100%;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    background-color: greenyellow;
-  
-  }
-  
-  nav .navbar .nav-sign {
-    display: none;
-  }
-  nav .navbar .bars-reponsive{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: 0.5s;
-    z-index: 999;
-  }
-  nav .navbar .bars-reponsive a.closebtn{
-    font-size: 50px;
-    position: absolute;
-    top: 5%;
-    right: 7%;
-    text-decoration: none;
-    color: greenyellow;
-  }
-  nav .navbar .bars-reponsive a.closebtn:hover{
-    color: white;
-  }
-  nav .navbar .bars-reponsive .bars-reponsive-content{
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  
-  }
-  nav .navbar .bars-reponsive .bars-reponsive-content a{
-    display: block;
-    padding: 8px;
-    font-size: 30px;
-    text-decoration: none;
-    color: greenyellow;
-  
-  }
-  nav .navbar .bars-reponsive .bars-reponsive-content a:hover{
-    color: white;
-  }
-  /* css cua nut search */
-  nav .navbar .search-sign {
-    display: none;
-  }
-  .navbar .search-responsive {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: 0.5s;
-    z-index: 999;
-  }
-  .navbar .search-responsive a.closebtn{
-    font-size: 50px;
-    position: absolute;
-    top: 5%;
-    right: 7%;
-    text-decoration: none;
-    color: greenyellow;
-  }
-  .navbar .search-responsive .search-responsive-content{
-    position: relative;
-    top: 45%;
-    background-color: red;
-    width: 80%;
-    text-align: center;
-    margin: auto;
-  
-  }
-  .navbar .search-responsive .search-responsive-content input[type=text]{
-    float: left;
-    width: 80%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px 0 0 5px;
-  }
-  .navbar .search-responsive .search-responsive-content button[type=submit]{
-    float: left;
-    width: 15%;
-    height: 44px;
-    padding:3px;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    border-radius: 0 5px 5px 0;
-    background-color: greenyellow;
-  }
-  
-  .SignIn-LogIn-nav {
-    display: none
-  }
-  
-  nav .navbar .navbar-link a {
-    text-decoration: none;
-    margin: 10px;
-    color: black;
-  }
-
-  
-  header .header .navbar-search form{
-    width: 100%;
-    padding: 0 100px;   
-  }
-  /* navbar responsive */
-  @media only screen and (max-width: 970px) {
-    
-    nav .navbar {
-        display: flex;
-        justify-content: space-around;
-        
-    }
-    nav .navbar .navbar-link {
-        display: none;
-        
-    }
-    
-    nav .navbar .nav-sign {
-        display: inline-block;
-        z-index: 99;
-    }
-    nav .navbar .nav-sign button{
-        background-color: greenyellow;
-        border: none;
-        outline: none;
-        font-size: 30px;
-    }
-    nav .navbar .nav-sign button:active{
-        color: white;
-    }
-    nav .navbar .search-sign {
-        display: inline-block;
-        z-index: 99;
-        
-    }
-    nav .navbar .search-sign button{
-        background-color: greenyellow;
-        border: none;
-        outline: none;
-        font-size: 30px;
-    }
-    nav .navbar .search-sign button:active{
-        color: white;
-    }
-    nav .navbar .SignIn-LogIn-nav{
-        display: inline-block;
-        z-index: 99; 
-    }
-    nav .navbar .SignIn-LogIn-nav button {
-        background-color: greenyellow;
-        border: none;
-        outline: none;
-        font-size: 30px;
-    }
-    nav .navbar .SignIn-LogIn-nav button:active{
-        color:aliceblue;
-    }
-  }
-  /* end */
 
 /*body*/
 

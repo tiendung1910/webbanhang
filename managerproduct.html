@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style-blog.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- link bootrap hieu -->
+    <link rel="stylesheet" href="css/style-login-signup.css">
+    <link rel="stylesheet" href="css/style-managerproduct.css">
+    <link rel="stylesheet" href="css/style-uploadproduct.css">
+    <link rel="stylesheet" href="css/style-raucu.css">
+    <link rel="stylesheet" href="css/style-blog.css">
+    <script src="js/vadi-login-signup.js"></script>
+    <title>Tin Tức</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="Image/logo.png" alt=""></a>
+            </div>
+            <div class="navbar-search">
+                <form action="#">
+                    <input type="text" name="search" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div>
+                <a class="text-white" href="giohang.html" style="text-decoration: none;"><i class="fas fa-shopping-bag"></i> Giỏ Hàng</a>
+            </div>
+            <div class="dropdown bg-dark" style="color: rebeccapurple;">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar" src="account-avatar.jpg">bhieu
+                </button>
+                <div class="dropdown-menu bg-dark">
+                    <a class="dropdown-item text-white" href="userpage.jsp">Chỉnh sửa thông tin cá nhân</a>
+                    <a class="dropdown-item text-white" href="uploadproduct.jsp">Đăng bán sản phẩm</a>
+                    <a class="dropdown-item text-white" href="index.jsp"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+                </div>
+            </div>
+            <div class="con-registerForm">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+    </header>
+
+<nav>
+    <div class="navbar">
+        <div class="nav-sign">
+            <button type="button" onclick="openBtn()">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="imgrespon">
+            <a href="index.html"><img class="" src="Image/logonongsanvnv2.png" alt=""></a>
+        </div>
+        <div id="myNav" class="bars-reponsive">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="bars-reponsive-content">
+                <a href="index.html">TRANG CHỦ</a>
+                <a href="gioithieu.html">GIỚI THIỆU</a>
+                <a href="RauCu.html">CỬA HÀNG</a>
+                <a href="blog.html">TIN TỨC</a>
+                <a href="lienhe.html">LIÊN HỆ</a>
+            </div>
+        </div>
+        <div class="navbar-link">
+            <a href="index.html">TRANG CHỦ</a>
+            <a href="gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown">
+                <div class="head-link"><a href="RauCu.html">CỬA HÀNG</a></div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="RauCu.html">Rau Củ</a></li>
+                        <li><a href="HaiSan.html">Hải Sản</a></li>
+                        <li><a href="TraiCay.html">Trái Cây</a></li>
+                        <li><a href="DoUong.html">Đồ Uống</a></li>
+                        <li><a href="DoKho.html">Đồ Khô</a></li>
+                        <li><a href="ThitTrung.html">Thịt Trứng</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="blog.html">TIN TỨC</a>
+            <a href="lienhe.html">LIÊN HỆ</a>
+        </div>
+        <div class="search-sign">
+            <button type="button" onclick="openSearch()">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div id="mySearch" class="search-responsive">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+            <div class="search-responsive-content">
+                <form action="#">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="SignIn-LogIn-nav">
+            <button type="button">
+                <i class="fas fa-sign-in-alt"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+<div class="container uploadbd">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-sm-12 bdh">
+            <h2>Quản lý tài khoản</h2>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a href="userpage.html" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
+                </li>
+                <li class="nav-item">
+                    <a href="uploadproduct.html" class="nav-link">Đăng bán sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a href="managerproduct.html" class="nav-link bg-h">Quản lý bài đăng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="managerorder.html" class="nav-link">Quản lý đơn hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="manageraccount.html" class="nav-link">Quản lý tài khoản</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-sm-12">
+            <form action="" method="post">
+                <div class="mp">
+                    <div class="e-mp">
+                        <img src="Image/chuoi.jpg" alt="">
+                        <div class="text-center mt-3">
+                            <h6>Tên sản phẩm</h6>
+                            <p name="namep">Chuối</p>
+                        </div>
+                        <div class="text-center mt-3 ml-3">
+                            <h6>Loại sản phẩm</h6>
+                            <p name="typep">Trái cây</p>
+                        </div>
+                        <div class="text-center mt-3 ml-3">
+                            <h6>Mô tả</h6>
+                            <div class="detail text-left">
+                                <p name="detailp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam consequuntur officia quae quas maiores perferendis molestias dolor suscipit excepturi deserunt neque perspiciatis, voluptatibus porro qui illo accusantium officiis pariatur eligendi.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- <button type="button" class="btn btn-success mt-5 ml-3" data-toggle="modal" data-target="#myModal">
+                                Chỉnh sửa
+                            </button> -->
+                            <a href="userpage.html" type="button" class="btn btn-success mt-5 ml-3" data-toggle="modal" data-target="#myModal">Chỉnh sửa</a>
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chỉnh sửa thông tin sản phẩm</h4>
+                                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form action="userpage.html" method="POST">
+                                                <div class="form-group">
+                                                    <label for="namep">Tên Sản Phẩm:</label>
+                                                    <input type="text" name="namep" id="namep" class="form-control" placeholder="Nhập tên sản phẩm">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="typep">Loại Sản Phẩm:</label>
+                                                    <input type="text" name="typep" id="typep" class="form-control" placeholder="Nhập loại sản phẩm">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="photo">Thêm Ảnh:</label>
+                                                    <input type="file" name="photo" id="photo" placeholder="Tải ảnh lên">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="detailp">Mô Tả Sản Phẩm:</label>
+                                                    <textarea name="detailp" id="detailp" cols="70" rows="10" class="form-control" placeholder="Nhập mô tả"></textarea>
+                                                    <!-- <input type="text" id="detailp" class="form-control" placeholder="Nhập mô tả"> -->
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-success">Cập nhật</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" type="button" class="btn btn-danger mt-5">Xoá</a>
+                            <!-- <button type="button" class="btn btn-danger mt-5">Xoá</button> -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/javascript.js"></script>
+</body>
+
+</html>

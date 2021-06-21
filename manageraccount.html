@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style-blog.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- link bootrap hieu -->
+    <link rel="stylesheet" href="css/style-login-signup.css">
+    <link rel="stylesheet" href="css/style-managerproduct.css">
+    <link rel="stylesheet" href="css/style-uploadproduct.css">
+    <link rel="stylesheet" href="css/style-raucu.css">
+
+    <script src="js/vadi-login-signup.js"></script>
+    <style>
+        /* :root{
+    --bg1 : #9b59b6;
+    --bg2 : #3498db;
+} */
+
+.title-table{
+    border: 1px solid black; border-radius: 5px; margin-left: 10px;margin-top: 10px;margin-bottom: 10px;padding: 10px;
+    background: linear-gradient(to bottom right,var(--bg1),var(--bg2));
+}
+
+.ele-table{
+    margin-left: 10px; padding: 10px;
+}
+    </style>
+    <title>Tin Tức</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.jsp"><img src="Image/logo.png" alt=""></a>
+            </div>
+            <div class="navbar-search">
+                <form action="#">
+                    <input type="text" name="search" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div>
+                <a class="text-white" href="giohang.html" style="text-decoration: none;"><i class="fas fa-shopping-bag"></i> Giỏ Hàng</a>
+            </div>
+            <div class="dropdown bg-dark" style="color: rebeccapurple;">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar" src="account-avatar.jpg">bhieu
+                </button>
+                <div class="dropdown-menu bg-dark">
+                    <a class="dropdown-item text-white" href="userpage.jsp">Chỉnh sửa thông tin cá nhân</a>
+                    <a class="dropdown-item text-white" href="uploadproduct.jsp">Đăng bán sản phẩm</a>
+                    <a class="dropdown-item text-white" href="index.jsp"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+                </div>
+            </div>
+            <div class="con-registerForm">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+    </header>
+
+<nav>
+    <div class="navbar">
+        <div class="nav-sign">
+            <button type="button" onclick="openBtn()">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="imgrespon">
+            <a href="index.html"><img class="" src="Image/logonongsanvnv2.png" alt=""></a>
+        </div>
+        <div id="myNav" class="bars-reponsive">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="bars-reponsive-content">
+                <a href="index.jsp">TRANG CHỦ</a>
+                <a href="gioithieu.jsp">GIỚI THIỆU</a>
+                <a href="RauCu.jsp">CỬA HÀNG</a>
+                <a href="blog.jsp">TIN TỨC</a>
+                <a href="lienhe.jsp">LIÊN HỆ</a>
+            </div>
+        </div>
+        <div class="navbar-link">
+            <a href="index.html">TRANG CHỦ</a>
+            <a href="gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown">
+                <div class="head-link"><a href="RauCu.html">CỬA HÀNG</a></div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="RauCu.html">Rau Củ</a></li>
+                        <li><a href="HaiSan.html">Hải Sản</a></li>
+                        <li><a href="TraiCay.html">Trái Cây</a></li>
+                        <li><a href="DoUong.html">Đồ Uống</a></li>
+                        <li><a href="DoKho.html">Đồ Khô</a></li>
+                        <li><a href="ThitTrung.html">Thịt Trứng</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="blog.html">TIN TỨC</a>
+            <a href="lienhe.html">LIÊN HỆ</a>
+        </div>
+        <div class="search-sign">
+            <button type="button" onclick="openSearch()">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div id="mySearch" class="search-responsive">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+            <div class="search-responsive-content">
+                <form action="#">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="SignIn-LogIn-nav">
+            <button type="button">
+                <i class="fas fa-sign-in-alt"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+<div class="container uploadbd">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-sm-12"
+             style="height: 1000px; box-shadow: 5px 7px 20px black; border-radius: 5px;">
+            <h2>Quản lý tài khoản</h2>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a href="userpage.html" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
+                </li>
+                <li class="nav-item">
+                    <a href="uploadproduct.html" class="nav-link">Đăng bán sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a href="managerproduct.html" class="nav-link">Quản lý bài đăng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="managerorder.html" class="nav-link">Quản lý đơn hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="manageraccount.html" class="nav-link bg-h">Tài khoản đã đăng kí vào hệ thống</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-sm-12">
+            <h2>Khách hàng đã đăng kí vào hệ thống</h2>
+            <div class="">
+                <div class="row text-center title-table">
+                    <div class="col-2">id</div>
+                    <div class="col-3">username</div>
+                    <div class="col-3">password</div>
+                    <div class="col-2">Chỉnh sửa</div>
+                    <div class="col-2">Xoá</div>
+                </div>
+                
+
+                <div class="row text-center ele-table">
+                
+                    <div class="col-2">1</div>
+                    <div class="col-3">admin</div>
+                    <div class="col-3">admin</div>
+                    <div class="col-2"><i class="fas fa-edit"></i></div>
+                    <div class="col-2"><i class="fas fa-trash"></i></div>
+                </div>
+                
+
+                <!--tinh nang hien thi ngay tao tai khoan-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/javascript.js"></script>
+</body>
+
+</html>

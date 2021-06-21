@@ -1,0 +1,13 @@
+:root{
+    --bg1 : #9b59b6;
+    --bg2 : #3498db;
+}
+
+.title-table{
+    border: 1px solid black; border-radius: 5px; margin-left: 10px;margin-top: 10px;margin-bottom: 10px;padding: 10px;
+    background: linear-gradient(to bottom right,var(--bg1),var(--bg2));
+}
+
+.ele-table{
+    margin-left: 10px; padding: 10px;
+}
